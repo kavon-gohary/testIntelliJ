@@ -17,6 +17,6 @@ public class Testing {
 
     @Test
     public void testTruth() throws Exception {
-        assertTrue(5!=5);
+        assertTrue(5==5);
     }
 }
