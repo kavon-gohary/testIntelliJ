@@ -10,7 +10,7 @@
     #"python --version",                        #scare to add this in case build breaks
     "pip install --upgrade pip"
     # "sudo apt-get update"  - cant use this line bc it requires sudo. can we set sudo to null?
-  ],
+#  ],
 #  "install": [
 #    "pip install autopep8",
 #    "pip install coverage",
