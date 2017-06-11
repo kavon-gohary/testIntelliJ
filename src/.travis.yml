@@ -1,0 +1,33 @@
+
+{
+  "sudo": false",
+  "language": "java",
+  "jdk": "openjdk8",      #though my version says 1.8, that means version 8 update 1
+
+#  "before_install": [
+    # "cd ~/Desktop/virENV",                    #these commands dont make sense bc travis is building on a VM, it is in no way inside my computer
+    # "source py35_env/bin/activate",
+    #"python --version",                        #scare to add this in case build breaks
+    "pip install --upgrade pip"
+    # "sudo apt-get update"  - cant use this line bc it requires sudo. can we set sudo to null?
+  ],
+#  "install": [
+#    "pip install autopep8",
+#    "pip install coverage",
+#    "pip install mypy",
+#    "pip install numpy",
+#    "pip install pylint"
+#  ],
+  # "before_script": [
+  #   "uname -a",
+  #   "printenv | sort",
+  #   "make versions"
+  # ],
+  "install": "true",
+
+  "script": [
+  "./mvnw clean install"
+  ],
+  "group": "stable",
+  "os": "linux"
+}
